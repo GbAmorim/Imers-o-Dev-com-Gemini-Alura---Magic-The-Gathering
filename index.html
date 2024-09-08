@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Imersão Alura</title>
+  </head>
+  <body>
+    <!-- TÍTULO -->
+    <header>
+      <h1>Magic The Gathering</h1>
+      <ul>
+        <li>Ancestral Recall (Retorno Ancestral)</li>
+        <li>Mox Emerald (Mox Esmeralda)</li>
+        <li>Aurora Phoenix (Fênix da Aurora)</li>
+        <li>Black Lotus (Lótus Preto)</li>
+        <li>Tarmogoyf</li>
+        <li>Mystic Mirror (Espelho Mágico)</li>
+      </ul>
+    </header>
+    <main>
+      <!-- BOTÕES DE PESQUISA -->
+      <section>
+        <input
+          type="text"
+          placeholder="Digite o nome da carta"
+          id="campo-pesquisa"
+        />
+        <button onclick="pesquisar()">Pesquisar</button>
+      </section>
+
+      <!-- RESULTADOS DE PESQUISA -->
+      <section class="resultados-pesquisa" id="resultados-pesquisa">
+        <!-- <div class="item-resultado">
+          <h2>
+            <a
+              href="https://repositorio.sbrauble.com/arquivos/in/magic/480114/633f3e9a549a3-upiaj-cwd9b-790499669633f3e9a549e9.jpg"
+              target="_blank"
+              >Ancestral Recall (Retorno Ancestral)</a
+            >
+          </h2>
+          <div class="descricao-meta">
+            <p><b>Descrição:</b> Desenhe três cartas.</p>
+
+            <p>
+              <b>Por que é clássica:</b> Uma das cartas mais poderosas e
+              desejadas de todos os tempos, permite ao jogador ter acesso a uma
+              grande quantidade de informações e opções no início do jogo.
+            </p>
+          </div>
+          <a
+            class="saiba-mais"
+            href="https://www.ligamagic.com.br/?view=cards/card&card=Ancestral%20Recall&aux=Reconvoca%C3%A7%C3%A3o%20Ancestral"
+            target="_blank"
+            >Saiba mais.</a
+          >
+        </div>
+        
+        <div class="item-resultado">
+          <h2>
+            <a
+              href="https://repositorio.sbrauble.com/arquivos/in/magic/480115/633f463d19413-swd6f-vzl6r-397279061633f463d19466.jpg"
+              target="_blank"
+              >Mox Emerald (Mox Esmeralda)</a
+            >
+          </h2>
+          <div class="descricao-meta">
+            <p>
+              <b>Descrição:</b> Adicione três manas de qualquer cor ao seu pool
+              de mana.
+            </p>
+            <p>
+              <b>Por que é clássica:</b> Uma das cinco Moxes, permite acelerar
+              drasticamente o desenvolvimento do jogo.
+            </p>
+          </div>
+          <a
+            class="saiba-mais"
+            href="https://www.ligamagic.com.br/?view=cards/card&card=Mox+Emerald&aux=Mox+de+Esmeralda"
+            target="_blank"
+            >Saiba mais.</a
+          >
+        </div>
+        
+        <div class="item-resultado">
+          <h2>
+            <a
+              href="https://repositorio.sbrauble.com/arquivos/in/magic/479911/629795cd8c6af-e7tdr-qzjmi-1686784992629795cd8c6ed.jpg"
+              target="_blank"
+              >Aurora Phoenix (Fênix da Aurora)</a
+            >
+          </h2>
+          <div class="descricao-meta">
+            <p>
+              <b>Descrição:</b> Quando Fênix da Aurora morrer, exila-a. No
+              início de seu próximo turno, retorne Fênix da Aurora ao campo de
+              batalha sob seu controle.
+            </p>
+            <p>
+              <b>Por que é clássica:</b> A habilidade de renascer torna a Fênix
+              da Aurora uma ameaça constante, dificultando para o oponente
+              eliminá-la permanentemente.
+            </p>
+          </div>
+          <a
+            class="saiba-mais"
+            href="https://www.ligamagic.com.br/?view=cards/card&card=Aurora%20Phoenix"
+            target="_blank"
+            >Saiba mais.</a
+          >
+        </div>
+
+        
+        <div class="item-resultado">
+          <h2>
+            <a
+              href="https://repositorio.sbrauble.com/arquivos/in/magic/480115/633f454e699ed-udmt2-64xiv-33716459633f454e69a38.jpg"
+              target="_blank"
+              >Black Lotus (Lótus Preto)</a
+            >
+          </h2>
+          <div class="descricao-meta">
+            <p>
+              <b>Descrição:</b> Adiciona três manás de qualquer cor ao pool de
+              mana do jogador. Pode ser sacrificada para adicionar três manás de
+              qualquer cor ao pool de mana do jogador.
+            </p>
+            <p>
+              <b>Por que é clássica:</b>A Black Lotus é considerada a carta mais
+              poderosa já impressa em Magic: The Gathering. Sua capacidade de
+              gerar uma quantidade absurda de mana nos primeiros turnos do jogo
+              a torna um artefato indispensável em diversos formatos
+              competitivos.
+            </p>
+          </div>
+          <a
+            class="saiba-mais"
+            href="https://www.ligamagic.com.br/?view=cards/card&card=Black+Lotus&aux=Lotus+Preto"
+            target="_blank"
+            >Saiba mais.</a
+          >
+        </div>
+
+        
+        <div class="item-resultado">
+          <h2>
+            <a
+              href="https://repositorio.sbrauble.com/arquivos/in/magic/480016/633c515a5342b-63pfg-49dqt-1225273305633c515a53470.jpg"
+              target="_blank"
+              >Tarmogoyf</a
+            >
+          </h2>
+          <div class="descricao-meta">
+            <p>
+              <b>Descrição:</b> O poder e a resistência de Tarmogoyf são iguais
+              ao número de tipos de card diferentes no cemitério do oponente.
+            </p>
+            <p>
+              <b>Por que é clássica:</b>A habilidade única de Tarmogoyf o torna
+              uma criatura extremamente versátil e poderosa. Sua força aumenta à
+              medida que o jogo avança, tornando-o uma ameaça constante para o
+              oponente.
+            </p>
+          </div>
+          <a
+            class="saiba-mais"
+            href="https://www.ligamagic.com.br/?view=cards/card&card=tarmogoyf"
+            target="_blank"
+            >Saiba mais.</a
+          >
+        </div>
+
+        
+        <div class="item-resultado">
+          <h2>
+            <a
+              href="https://repositorio.sbrauble.com/arquivos/in/magic/479774/5f424436ee5dd-yx2mrv-nl384x-d81f9c1be2e08964bf9f24b15f0e4900.jpg"
+              target="_blank"
+              >Mystic Mirror (Espelho Mágico)</a
+            >
+          </h2>
+          <div class="descricao-meta">
+            <p>
+              <b>Descrição:</b>Você pode olhar o topo dos três cards do seu
+              deck. Revele um deles e coloque-o em sua mão. Coloque os outros no
+              fundo do seu deck em qualquer ordem.
+            </p>
+            <p>
+              <b>Por que é clássica:</b>O Espelho Mágico é uma ferramenta de
+              manipulação de biblioteca poderosa. Ele permite que o jogador
+              procure por cartas específicas e aumente suas chances de encontrar
+              as peças-chave de seu deck no momento certo.
+            </p>
+          </div>
+          <a
+            class="saiba-mais"
+            href="https://www.ligamagic.com.br/?view=cards/card&card=The+Magic+Mirror"
+            target="_blank"
+            >Saiba mais.</a
+          >
+        </div> -->
+      </section>
+    </main>
+    <footer>
+      <p>Todos os direitos reservados de Gabriel Amorim de Ceia.</p>
+      <p>Entre em contato pelo email: raramivoxelart@gmail.com</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
